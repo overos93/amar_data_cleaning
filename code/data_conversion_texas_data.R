@@ -99,4 +99,4 @@ data <- data %>% mutate(Protest_Type = if_else(Protest == "0", "0", Protest_Type
                         Discrim_Type = if_else(Discrimination == "0", "0", Discrim_Type)) %>%
   filter(body != "")
 
-export(data, here("data", "texas_coded_data.csv"))
+export(data, here("data-cleaned", "texas_coded_data.csv"))
